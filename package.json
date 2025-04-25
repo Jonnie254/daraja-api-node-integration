@@ -1,0 +1,33 @@
+{
+  "name": "daraja-api-node-integration",
+  "version": "1.0.0",
+  "description": "This is a basic implementation of daraja api using node and typescript",
+  "main": "server.js",
+  "scripts": {
+    "start:build": "tsc --watch --project backend",
+    "start:dev": "nodemon dist/server.js",
+    "start": "concurrently \"npm run start:build\" \"npm run start:dev\""
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonnie254/daraja-api-node-integration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonnie254/daraja-api-node-integration/issues"
+  },
+  "homepage": "https://github.com/Jonnie254/daraja-api-node-integration#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
